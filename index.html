@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <iframe src="https://script.google.com/macros/s/AKfycbzLEuqXg7v86tuzZeTNgwuLpC2CEJbL6XZaU5fQX2ZNjeC7JahG9XUhFDWxHttWJGmZ/exec" frameborder="0" width="100%" height="633px"></iframe> -->
+    <iframe
+        src="https://script.google.com/macros/s/AKfycbzLEuqXg7v86tuzZeTNgwuLpC2CEJbL6XZaU5fQX2ZNjeC7JahG9XUhFDWxHttWJGmZ/exec"
+        frameborder="0" onload="this.width=screen.width;this.height=screen.height"></iframe>
+</body>
+</html>
+
+<!-- add the following in the google script after the evaluate()
+.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL)
+
+
+If web app is made of several page, need to insert the following in the head of the HTMLs that open links :
+<base target="_self"> 
+
+I'd like to embed the code at google sites but with mobile responsiveness, how do i do it?
+.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL).addMetaTag('viewport', 'width=device-width, initial-scale=1'); // It is very important tag for Responsive;
+
+if using google site: just insert -> embed then put URL of deployed web app. then modify Themes -> Custom Themes -> Spacing to reduce borders
+
+if directly inserting an iframe tag in the source code, height parameter is broken, need to manually adjust amount of pixel to suit the device used, or try using v2 of the code above with onload=...
+
+-->
